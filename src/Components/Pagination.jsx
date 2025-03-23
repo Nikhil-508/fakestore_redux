@@ -7,7 +7,9 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         <button
           key={i}
           className={`px-4 py-2 rounded-md cursor-pointer ${
-            currentPage === i + 1 ? 'bg-blue-500 text-white' : 'bg-gray-300'
+            currentPage === i + 1 
+            ? 'bg-black border-2 border-red-500 text-white' 
+            : 'bg-red-700 text-white'
           }`}
           onClick={() => onPageChange(i + 1)}
         >
