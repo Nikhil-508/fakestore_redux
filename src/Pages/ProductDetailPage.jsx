@@ -28,7 +28,7 @@ const ProductDetailPage = () => {
             className="h-80 mx-auto rounded-md object-contain"
           />
           <h2 className="font-bold text-3xl mt-4 text-maroon">{selectedProduct.title}</h2>
-          <p className="text-gold text-2xl font-semibold mt-2"> ₹{(product.price * 83).toFixed(2)}</p>
+          <p className="text-gold text-2xl font-semibold mt-2"> ₹{(selectedProduct.price * 83).toFixed(2)}</p>
           <p className="mt-4 text-gray-300">{selectedProduct.description}</p>
           <p className="mt-3 text-lg font-medium text-gray-400">
             Category: <span className="text-white">{selectedProduct.category}</span>
